@@ -1,0 +1,482 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: Revalia, cursive;
+    font-size: 48px;
+    color: #34547a;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      padding-right: 42px;
+    }
+    &:hover {
+      color: #34547a;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .header__nav {
+      display: none;
+    }
+
+    .menu {
+      margin-right: 10px;
+
+      &__item-hamburger {
+        &:active .line:nth-child(1),
+        &:focus .line:nth-child(1) {
+          transform: rotate(45deg) translate(0px, 18px);
+        }
+        &:active .line:nth-child(2),
+        &:focus .line:nth-child(2) {
+          visibility: hidden;
+        }
+        &:active .line:nth-child(3),
+        &:focus .line:nth-child(3) {
+          transform: rotate(-45deg) translate(0px, -18px);
+        }
+      }
+    }
+    .line {
+      transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      height: 8px;
+      width: 45px;
+      background: #000;
+      margin: 5px auto;
+      border-radius: 10px;
+    }
+    .project__boxs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    display: inline-block;
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    a:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.main-screen {
+  background: #eeeff1;
+  padding: 257px 0 146px;
+
+  @media screen and (max-width: 900px) {
+    padding: 100px 0 50px;
+
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img h1" "img p" "img btn";
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "h1" "img" "p" "btn";
+
+      h1,
+      img,
+      p,
+      button {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__pic {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    grid-area: h1;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin: 60px 0;
+    font-size: 16px;
+    grid-area: p;
+  }
+
+  &__btn {
+    color: #fff;
+    background: #34547a;
+    padding: 25px 41px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    justify-self: start;
+    grid-area: btn;
+  }
+}
+/* ------------------------------------------------ */
+.about-me {
+  padding: 112px 0 100px;
+  text-align: center;
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  p {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 50px 0 50px;
+  }
+}
+/* ---------------------------------------------------------------- */
+.project {
+  background: #34547a;
+  color: #fff;
+  padding: 100px 0;
+  @media screen and (max-width: 800px) {
+    padding: 20px 0;
+  }
+
+  &__boxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__texts {
+    font-size: 16px;
+  }
+  &__texts h6 {
+    font-weight: 500;
+    font-size: 21px;
+  }
+}
+/* ---------------------------------------------------- */
+.my-skills {
+  padding: 100px 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 50px 0;
+  }
+
+  &__box {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 9fr 11fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &__skills {
+    justify-self: stretch;
+  }
+
+  &__skills h6 {
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+  }
+
+  &__skill-progress {
+    font-size: 16px;
+  }
+
+  &__skill {
+    margin-bottom: 20px;
+  }
+  &__progress {
+    position: relative;
+    max-width: 100%;
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      content: "";
+      border: 1px solid #34547a;
+      background-color: #34547a;
+    }
+
+    &.html::before {
+      width: 30%;
+    }
+    &.css::before {
+      width: 20%;
+    }
+    &.scss::before {
+      width: 5%;
+    }
+    &.js::before {
+      width: 1%;
+    }
+    &.figma::before {
+      width: 30%;
+    }
+    &.photoshop::before {
+      width: 30%;
+    }
+    &.github::before {
+      width: 10%;
+    }
+    &.git::before {
+      width: 10%;
+    }
+  }
+
+  &__foto {
+    justify-self: center;
+    align-self: center;
+
+    img {
+      border: 1px solid transparent;
+      border-radius: 10px;
+    }
+  }
+}
+
+.how-works {
+  text-align: center;
+  padding: 50px 0;
+  background: #eeeff1;
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+  }
+
+  &__text {
+    padding: 50px 0;
+    font-size: 16px;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  &__video {
+    max-width: 50%;
+    margin: 0 auto;
+    @media screen and (max-width: 500px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 200px 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      .gallery__overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #34537a88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+
+    img {
+      max-width: 100px;
+    }
+  }
+}
+.microsoft {
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+}
+
+.form {
+  padding: 200px 0;
+  background: #eeeff1;
+  text-align: center;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: #000000;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  &__contents {
+    margin: 0 auto;
+    max-width: 540px;
+    display: grid;
+  }
+
+  &__contents-head {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto 20px;
+    width: 100%;
+
+    @media screen and (max-width: 500px) {
+      display: grid;
+    }
+
+    input {
+      border: 0;
+      width: 100%;
+      padding: 20px 10px;
+      font-family: Roboto, sans-serif;
+    }
+  }
+
+  textarea {
+    padding: 10px;
+    min-height: 200px;
+    font-family: Roboto, sans-serif;
+  }
+
+  &__btn {
+    background: #34547a;
+    width: 190px;
+    height: 55px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 0;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  background: #34547a;
+  color: #fff;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__texts h2 {
+    padding-bottom: 20px;
+  }
+
+  &__liks {
+    display: flex;
+    gap: 30px;
+    img {
+      max-width: 80px;
+      @media screen and (max-width: 800px) {
+        max-width: 50px;
+      }
+    }
+  }
+}

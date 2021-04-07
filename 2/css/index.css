@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 54px 0 0px;
+}
+
+.header img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* *------ Main-Screen --------------------- */
+
+.main-screen {
+  padding: 210px 0;
+}
+
+.main-screen__title {
+  font-size: 51px;
+  color: #131313;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-screen__subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin: 17px 0 33px;
+}
+
+.main-screen__actions {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.main-screen__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 66px;
+  border-radius: 5px;
+  background-color: #f4c32f;
+  border: 0;
+  font-size: 19px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.main-screen__button:hover {
+  background-color: #ffbf0070;
+  border: 1px solid #000;
+}
+
+.main-screen__button-white {
+  border: 1px solid #000;
+  background: transparent;
+}
+
+.main-screen__button-white:hover {
+  background-color: #00000070;
+  border: 0;
+}
+
+/* *-------- Services ------------------------ */
+.services {
+  text-align: center;
+  background-color: #efefef;
+  padding: 85px 0 108px;
+}
+
+.services__title {
+  padding-bottom: 60px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.services__content-pictures {
+  width: 67px;
+  height: 67px;
+  margin: 30px;
+  margin-bottom: 22px;
+}
+
+.services__content {
+  columns: 3;
+  column-gap: 50px;
+  row-gap: 46px;
+}
+
+.services__content-text {
+  font-size: 15px;
+
+  text-align: match-parent;
+}
+
+.services__content-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services__content-link {
+  font-weight: 700;
+  display: block;
+  padding-top: 72px;
+}
+
+/* *-------- Advantages ---------------- */
+
+.advantages {
+  padding: 90px 0 0 0;
+}
+
+.advantages__title {
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.advantages__items {
+  display: flex;
+
+  text-align: left;
+  justify-content: center;
+  margin: 0 auto;
+  counter-reset: list;
+}
+
+.advantages__items-iphone {
+  max-width: 324px;
+  max-height: 460px;
+  margin: 0 108px;
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.list__item::before {
+  counter-increment: list;
+  content: "0" counter(list);
+  padding-top: 20px;
+  margin-right: 5px;
+  opacity: 0.48;
+  font-size: 31px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.list__item {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 38px 15pxp;
+}
+
+.list__item-text {
+  max-width: 279px;
+  opacity: 0.76;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* *----------- Footer -------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #efefef;
+}
+.footer__text {
+  padding: 0px 85px;
+  opacity: 0.47;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* *---------------- Media ------------- */
+
+@media screen and (max-width: 900px) {
+  .main-screen {
+    padding: 20px 0;
+  }
+
+  .main-screen__title {
+    font-size: 25px;
+  }
+
+  .services {
+    padding: 35px 0 52px;
+  }
+
+  .services__title {
+    padding-bottom: 10px;
+  }
+
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages {
+    padding-top: 20px;
+  }
+
+  .advantages__items {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* !----------Це тіпа варіант 2-------- */
+    /*   display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* !---------------------------------- */
+  }
+  .advantages__items-iphone {
+    order: 2;
+    /* !----------Це тіпа варіант 2-------- */
+    /* position: relative;
+    top: 100%; */
+    /* !---------------------------------- */
+  }
+
+  .advantages__list {
+    padding-left: 15px;
+  }
+
+  .footer__text {
+    padding: 0px 30px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-screen {
+    padding: 20px 0;
+  }
+
+  .main-screen__title {
+    font-size: 25px;
+  }
+
+  .main-screen__actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0px;
+    padding-left: 0px;
+  }
+
+  .main-screen__button {
+    flex: 1 1 auto;
+    margin: 10px 0;
+  }
+
+  .services {
+    padding: 35px 0 52px;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .advantages {
+    padding-top: 20px;
+  }
+
+  .advantages__title {
+    padding-bottom: 20px;
+  }
+
+  .advantages__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__list {
+    order: 1;
+  }
+
+  .list__item {
+    margin: 0 0 10px;
+  }
+
+  .advantages__items-iphone {
+    position: relative;
+    top: 0;
+    order: 2;
+  }
+
+  .footer {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+  .footer__text {
+    padding: 13px 24px;
+  }
+}

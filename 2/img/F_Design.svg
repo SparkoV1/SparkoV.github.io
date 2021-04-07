@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 35" width="142" height="35">
+	<defs>
+		<image width="142" height="35" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAAjCAYAAABCfzI4AAADhUlEQVR4nO1a4XHzIAx9K3iFrOAVukJWyApZoStkhazgFbJCVvAK3/fDqKZUQjKGRDnz7rhrY4El9CyEAAD+OWodHwQvDvOiR4cRXhzmRY8OI7w4zIseHUZ4cZgXPTqM8OIwL3p0GOHFYV706DDC6rAvtN1qazJ343vuAK6VxuLGlnAGcGP6TBl9zgXvAYARwDeAOen3CL8PQr/U7m/lPYOg3wx8DnGAxQFTkL1hMTxtD6yTeNo5VtxmyA6lcR5MP3LWjIUoMU5Bhgg3hf8vGb1Jdhb0pPnmyHoJMlMkN2beBfy2/xn+vgJ24pxCh9KvVYNVjyt0g89YDdXIY5k8YCEFRxxyQi7KnSI5jhQjbBFgMsqRj27Cc7KbyG7BnMpuzS3SyCMpl4Y5DTWJg/D8j7GFYwE8cWguNEcCC3kkWQtxKNJoyzBhgmw72U0Es4z5MuIA7yVOLCtNzNax0mhB/b8M/YF1eUmhEYeea7lPjDt04oxBZoacFxFeSpxr1DS0IA6wLFfPSmNJ/VsTh6LNFj0p3+MQ220l5UuJswWtiEOTzuU6e4lDc7F3DjTiPGHPRSxI7aakOpeUH444uaiwlziALTnWkCMO5Ua15hng7abILC1ZhyVOuhUuGYvDgJU8tF3dihxxaL73EDMFZ7cWPasTJ9dyoS/FO4mjNS1xBBZbqYYUk8iiZ444VCRsTRxgXda56NyJwzzTCoBbMOBvkW1S9PVCnAFyPtWJs2OsElyxHg1Izq+xVHHRc1ZkObsvwvsOm+O0So4tGLAuY5weNZJjOr+i9kQZcYBlaz7j9070cMRpuR2/wL6EEDm4+bJsx6ValAQq7HHQ7B5C3yn67XDEaVkAzFVnJV04eY04VGfZouce4sQy9GEcijg1jxy46EIh3YpS4pQcOewlTjwGRaBDEKf2ISd3aEjEsWzXc3USyyGn9hGkqEGcE9brJMXEoWsV6WWlB/gDwK2oSZxW1ypS4tBW+aGMMWJNVjl9rNcqrKfZF+Q/mpKoTXb+wOowbRs+yV1NsOjxzotc0jJzDs9oDtJ+cVWZc1R8czB3W5CgXeSirf8EPhKmdnNlihTxnP7gU4jj4eqotuy9+upo2k+rVkt2a/NFvt+V47SCFz06jPDiMC96dBjhxWFe9OgwwovDvOjRYYQXh3nRo8MILw7zokeHEV4c5kWPDiNK6hmtWseH4D/k9Bma20HVIgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="F  Design" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
