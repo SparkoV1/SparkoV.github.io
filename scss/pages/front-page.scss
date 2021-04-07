@@ -104,7 +104,7 @@
       background-color: #f1f1f1;
     }
     img {
-      max-width: 100px;
+      max-width: 50px;
     }
   }
 }
@@ -303,6 +303,7 @@
   &__foto {
     justify-self: center;
     align-self: center;
+    max-width: 410px;
 
     img {
       border: 1px solid transparent;
