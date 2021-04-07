@@ -37,9 +37,6 @@
 
     .menu {
       margin-right: 10px;
-      .menu__item-hamburger {
-        border: 0;
-      }
 
       &__item-hamburger {
         &:active .line:nth-child(1),
