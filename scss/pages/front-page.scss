@@ -41,7 +41,6 @@
   @media screen and (max-width: 780px) {
     .header__nav {
       position: fixed;
-      display: block;
       top: -100%;
       transition: all 0.3s ease 0s;
     }
