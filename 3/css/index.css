@@ -40,6 +40,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header-box__scroll-color {
+  background-color: rgba(47, 102, 173, 0.466);
+  margin-top: 0px;
+}
 
 .header__nav {
   display: flex;
@@ -85,11 +89,10 @@ body {
   border: 1px solid #ffffff;
   background: none;
   cursor: pointer;
-  transition: all 0.35s;
 }
 
 .header__btn:hover {
-  background-color: rgb(2, 40, 255);
+  background: linear-gradient(74deg, #03205f 0%, #cbe2e6 100%);
 }
 
 .header__btn:hover:after {
@@ -173,7 +176,7 @@ body {
 .form__input {
   margin-right: 19px;
   border-radius: 22px;
-  border: 1px solid #333645;
+  border: 1px solid #33364591;
   opacity: 0.64;
 }
 
@@ -415,7 +418,7 @@ th {
 .form-bottom__input {
   margin-right: 19px;
   border-radius: 22px;
-  border: 1px solid #333645;
+  border: 1px solid #33364591;
   opacity: 0.64;
 }
 

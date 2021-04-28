@@ -19,11 +19,13 @@
     font-family: Revalia, cursive;
     font-size: 48px;
     color: #34547a;
+    font-weight: 900;
   }
 
   &__link {
     font-size: 16px;
     color: #000;
+    font-weight: 500;
     text-transform: uppercase;
 
     &:not(:last-child) {
