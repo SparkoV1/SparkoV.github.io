@@ -14,7 +14,14 @@ jQuery(document).ready(function($) {
       } else {
         $arrowUp.removeClass("active");
       }
-    })
+    }),
+    ScrollReveal().reveal(
+      ".my-skills__skill, .my-skills__foto,.gallery__item",
+      {
+        interval: 400,
+        distance: "150px",
+      }
+    )
   );
 
   $menuToggle.on("click", function() {
