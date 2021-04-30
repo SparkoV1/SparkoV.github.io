@@ -10,6 +10,7 @@
   right: 0;
   background-color: #eeeff1;
   padding: 10px;
+
   &__box {
     display: flex;
     justify-content: space-between;
@@ -541,8 +542,8 @@
     border-bottom: 20px solid rgb(20, 100, 165);
   }
 }
-
-.active {
+a .active {
+  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
