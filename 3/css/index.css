@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header-box__scroll-color {
+.sticky {
   background-color: rgba(47, 102, 173, 0.466);
   margin-top: 0px;
 }

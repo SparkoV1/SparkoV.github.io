@@ -19,16 +19,20 @@
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="header__box">
           <div class="header__logo">DZ</div>
           <nav class="header__nav">
-            <a href="#" class="header__link">Home</a>
-            <a href="#about-me" class="header__link">About me</a>
-            <a href="#gallery" class="header__link">My works </a>
-            <a href="#how-work" class="header__link">Process</a>
-            <a href="#contacts" class="header__link">Contacts</a>
+            <ul class="header__nav-links">
+              <li><a href="#main-screen" class="header__nav-link">Home</a></li>
+              <li><a href="#about-me" class="header__nav-link">About me</a></li>
+              <li>
+                <a href="#gallery" class="header__nav-link">My works </a>
+              </li>
+              <li><a href="#how-work" class="header__nav-link">Process</a></li>
+              <li><a href="#contacts" class="header__nav-link">Contacts</a></li>
+            </ul>
           </nav>
 
           <div class="menu-toggle">
@@ -40,7 +44,7 @@
       </div>
     </header>
 
-    <section class="main-screen">
+    <section id="main-screen" class="main-screen">
       <div class="container">
         <div class="main-screen__contents">
           <h1 class="main-screen__title">Design and page making</h1>
@@ -290,6 +294,8 @@
       </div>
     </section>
 
+    <div class="arrow-up">Up</div>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__box">
@@ -316,6 +322,7 @@
     </footer>
 
     <script src="./src/jquery-3.6.0.min.js"></script>
+    <script src="./src/jquery.ba-throttle-debounce.min.js"></script>
     <script src="./src/index.js"></script>
   </body>
 </html>
