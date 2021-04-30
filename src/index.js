@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
   const $a = $(".header__nav-links");
   const $arrowUp = $(".arrow-up");
   const $headerLink = $(".header__nav-link");
+  const $writeMeBtn = $(".main-screen__btn");
 
   $(window).on(
     "scroll",
@@ -44,5 +45,14 @@ jQuery(document).ready(function($) {
 
   $arrowUp.on("click", function() {
     $("html, body").animate({ scrollTop: 0 }, 500);
+  });
+  $writeMeBtn.on("click", function() {
+    $("html, body").animate(
+      { scrollTop: $(contacts).offset().top - -150 },
+      500
+    );
+  });
+  $(".form__contents").each(function() {
+    this.reset();
   });
 });
