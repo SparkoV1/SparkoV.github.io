@@ -51,6 +51,14 @@
     .header__nav {
       position: fixed;
       top: -100%;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: grid;
+      justify-items: center;
+      background: #34547a;
+
       transition: all 0.3s ease 0s;
       &.active {
         position: fixed;
@@ -520,7 +528,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
+  opacity: 0.6;
   width: 50px;
   height: 50px;
   background: rgb(20, 100, 165);
@@ -543,33 +551,7 @@
   }
 }
 .active {
-  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer {
-  padding: 20px 0;
-  background: #34547a;
-  color: #fff;
-
-  &__box {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__texts h2 {
-    padding-bottom: 20px;
-  }
-
-  &__liks {
-    display: flex;
-    gap: 30px;
-    img {
-      max-width: 80px;
-      @media screen and (max-width: 800px) {
-        max-width: 50px;
-      }
-    }
-  }
 }
