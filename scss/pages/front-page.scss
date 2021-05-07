@@ -113,9 +113,6 @@
       -webkit-touch-callout: none;
     }
   }
-  /*
- * Just a quick hamburger
- */
 
   .menu-toggle {
     span {
@@ -340,16 +337,19 @@
     }
 
     &.html::before {
-      width: 30%;
+      width: 40%;
     }
     &.css::before {
-      width: 20%;
+      width: 30%;
     }
     &.scss::before {
-      width: 5%;
+      width: 30%;
     }
     &.js::before {
-      width: 1%;
+      width: 10%;
+    }
+    &.jquery::before {
+      width: 10%;
     }
     &.figma::before {
       width: 30%;
@@ -358,10 +358,10 @@
       width: 30%;
     }
     &.github::before {
-      width: 10%;
+      width: 30%;
     }
     &.git::before {
-      width: 10%;
+      width: 20%;
     }
   }
 
