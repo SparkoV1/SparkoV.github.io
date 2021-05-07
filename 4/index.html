@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
     <header class="header">
@@ -21,29 +21,52 @@
             <img src="./img//logo.svg" alt="Crowdme" />
           </a>
           <nav class="header__nav">
-            <a href="#" class="header__link">Home</a>
-            <a href="#" class="header__link">How it works</a>
-            <a href="#" class="header__link">How</a>
-            <a href="#" class="header__link">Blog</a>
-            <a href="#" class="header__link">Contacts</a>
+            <ul class="header__nav-links">
+              <li><a href="#" class="header__nav-link">Home</a></li>
+              <li><a href="#" class="header__nav-link">How it works</a></li>
+              <li><a href="#" class="header__nav-link">How</a></li>
+              <li><a href="#" class="header__nav-link">Blog</a></li>
+              <li><a href="#" class="header__nav-link">Contacts</a></li>
+            </ul>
           </nav>
           <button class="header__btn btn">Login</button>
 
-          <div class="menu__item--hamburger" id="sandwichmenu" tabindex="1">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
     </header>
 
     <section class="banner">
-      <div class="banner__text">
-        <b>Intellectual Property has the Shelf Life</b> <br />
-        of a Banana.
+      <div class="slider">
+        <div class="slider__content">
+          <div class="slider__overlay"></div>
+          <img src="./img/banner.png" alt="" class="slider__img" />
+          <p class="slider__text">
+            <b>Intellectual Property has the Shelf Life</b> <br />
+            of a Banana.
+          </p>
+        </div>
+        <div class="slider__content">
+          <div class="slider__overlay"></div>
+          <img src="./img/banner.png" alt="" class="slider__img" />
+          <p class="slider__text">
+            <b>Intellectual Property has the Shelf Life</b> <br />
+            of a Banana.
+          </p>
+        </div>
+        <div class="slider__content">
+          <div class="slider__overlay"></div>
+          <img src="./img/banner.png" alt="" class="slider__img" />
+          <p class="slider__text">
+            <b>Intellectual Property has the Shelf Life</b> <br />
+            of a Banana.
+          </p>
+        </div>
       </div>
-      <button class="banner__btn btn">Become a Member</button>
     </section>
 
     <section class="our-work">
@@ -265,5 +288,8 @@
         </div>
       </div>
     </footer>
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick.min.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
