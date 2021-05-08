@@ -1,0 +1,38 @@
+.footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background: #34547a;
+  color: #fff;
+  z-index: 100;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__texts h2 {
+  padding-bottom: 20px;
+}
+
+.footer__liks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.footer__liks img {
+  max-width: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer__liks img {
+    max-width: 50px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

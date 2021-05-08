@@ -5,7 +5,24 @@ jQuery(document).ready(function ($) {
 
   $(".slider").slick({
     dots: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
+
+  $(window).on("resize", function () {
+    if ($(this).width() > 600) {
+      $(".slick-prev").text("");
+      $(".slick-next").text("");
+    }
+  });
+
   $(".slick-prev").text("");
   $(".slick-next").text("");
 
