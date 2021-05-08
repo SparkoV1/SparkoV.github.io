@@ -219,7 +219,7 @@
   &__text {
     max-width: 540px;
     margin: 60px 0;
-    font-size: 16px;
+    font-size: 20px;
     grid-area: p;
   }
 
@@ -248,6 +248,7 @@
   p {
     max-width: 540px;
     margin: 0 auto;
+    font-size: 20px;
   }
   @media screen and (max-width: 800px) {
     padding: 50px 0 50px;
