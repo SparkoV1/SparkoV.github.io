@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   const $menuToggle = $(".menu-toggle");
   const $headerNav = $(".header__nav");
   const $html = $("html");
-  const $a = $(".header__nav-links");
+  const $links = $(".header__nav-links");
   const $arrowUp = $(".arrow-up");
   const $headerLink = $(".header__nav-link");
   const $writeMeBtn = $(".main-screen__btn");
@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
     $menuToggle.toggleClass("active");
   });
 
-  $a.on("click", function() {
+  $links.on("click", function() {
     $menuToggle.removeClass("active");
     $headerNav.removeClass("active");
     $html.removeClass("overflow-hidden");
