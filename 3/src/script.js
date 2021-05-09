@@ -7,4 +7,13 @@ $(document).ready(function() {
       $headerNavLink.removeClass("sticky");
     }
   });
+
+  let delay = 36,
+    output = $(".time-left").text(delay),
+    timer = setInterval(function() {
+      output.text(--delay);
+      if (!delay) {
+        clearInterval(timer);
+      }
+    }, 60 * 1000);
 });
