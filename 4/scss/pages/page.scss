@@ -424,8 +424,8 @@ section {
     font-size: 16px;
     color: #fff;
     position: absolute;
-    top: 173px;
-    left: 146px;
+    right: 5%;
+    bottom: 5%;
     padding: 8px 11px 7px 10px;
     border-radius: 6px;
   }
@@ -709,10 +709,6 @@ hr {
     left: 2%;
   }
 
-  .work-look__tab {
-    max-width: max-content;
-  }
-
   .find {
     flex-direction: column;
     &__item {
@@ -725,8 +721,14 @@ hr {
 
   .work-look__tabs {
     flex-direction: column;
+  }
+  .work-look {
+    &__tab {
+      max-width: max-content;
+    }
+
     &__tab:not(:last-child) {
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
     &__tab:hover::after {
       width: 0;
@@ -744,5 +746,15 @@ hr {
         "img img"
         "p p";
     }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .projects__cards {
+    display: block;
+  }
+
+  .projects__card {
+    margin: 0 10px;
   }
 }

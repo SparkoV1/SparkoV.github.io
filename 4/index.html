@@ -23,10 +23,12 @@
           <nav class="header__nav">
             <ul class="header__nav-links">
               <li><a href="#" class="header__nav-link">Home</a></li>
-              <li><a href="#" class="header__nav-link">How it works</a></li>
-              <li><a href="#" class="header__nav-link">How</a></li>
-              <li><a href="#" class="header__nav-link">Blog</a></li>
-              <li><a href="#" class="header__nav-link">Contacts</a></li>
+              <li>
+                <a href="#our-work" class="header__nav-link">How it works</a>
+              </li>
+              <li><a href="#how" class="header__nav-link">How</a></li>
+              <li><a href="#projects" class="header__nav-link">Blog</a></li>
+              <li><a href="#contscts" class="header__nav-link">Contacts</a></li>
             </ul>
           </nav>
           <button class="header__btn btn">Login</button>
@@ -78,7 +80,7 @@
       </div>
     </section>
 
-    <section class="our-work">
+    <section id="our-work" class="our-work">
       <div class="container">
         <img class="our-work__pic" src="./img/Shape_846.svg" alt="Shape" />
         <h2 class="our-work__title">
@@ -101,7 +103,7 @@
       </div>
     </section>
 
-    <section class="work-look">
+    <section id="how" class="work-look">
       <div class="container">
         <div class="work-look__tabs">
           <div class="work-look__tab">1 Simple</div>
@@ -153,7 +155,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <div class="projects__head">
           <div class="projects__texts">
@@ -245,7 +247,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section id="contscts" class="testimonials">
       <div class="container">
         <h2 class="testimonials__title">
           Be Part of a Growing International Community
@@ -299,6 +301,7 @@
     </footer>
     <script src="./libs/jquery-3.6.0.min.js"></script>
     <script src="./libs/slick.min.js"></script>
+    <script src="./libs/jquery.ba-throttle-debounce.min.js"></script>
     <script src="./src/index.js"></script>
   </body>
 </html>
