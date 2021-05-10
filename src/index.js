@@ -31,6 +31,11 @@ jQuery(document).ready(function($) {
     $menuToggle.toggleClass("active");
   });
 
+  $(".button").on("click", function() {
+    $html.removeClass("overflow-hidden");
+    $(".overflov-start").fadeOut(1000);
+  });
+
   $links.on("click", function() {
     $menuToggle.removeClass("active");
     $headerNav.removeClass("active");
