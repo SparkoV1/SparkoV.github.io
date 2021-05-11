@@ -1,4 +1,4 @@
-$("html, body").animate({ scrollTop: "0px" }, 10);
+window.scrollTo(0, 0);
 
 jQuery(document).ready(function($) {
   const $menuToggle = $(".menu-toggle");
