@@ -1,3 +1,5 @@
+$("html, body").animate({ scrollTop: "0px" }, 10);
+
 jQuery(document).ready(function($) {
   const $menuToggle = $(".menu-toggle");
   const $headerNav = $(".header__nav");
@@ -6,7 +8,6 @@ jQuery(document).ready(function($) {
   const $arrowUp = $(".arrow-up");
   const $headerLink = $(".header__nav-link");
   const $writeMeBtn = $(".main-screen__btn");
-  $("html, body").animate({ scrollTop: "0px" }, 10);
 
   $(window).on(
     "scroll",
