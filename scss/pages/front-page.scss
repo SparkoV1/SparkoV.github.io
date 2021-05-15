@@ -193,7 +193,7 @@
   background: #eeeff1;
   padding: 257px 0 146px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 993px) {
     padding: 100px 0 50px;
 
     &__title {
@@ -238,6 +238,9 @@
     font-size: 48px;
     color: #000000;
     grid-area: h1;
+    @media screen and (max-width: 993px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
