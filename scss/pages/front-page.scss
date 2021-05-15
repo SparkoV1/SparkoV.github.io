@@ -296,12 +296,11 @@
   }
 
   &__box {
-    max-width: 1150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
     @media screen and (max-width: 600px) {
       display: block;
@@ -309,7 +308,7 @@
   }
 
   &__skills {
-    justify-self: stretch;
+    justify-self: center;
   }
 
   &__skills h6 {
