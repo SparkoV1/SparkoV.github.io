@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
   const $links = $(".header__nav-links");
   const $arrowUp = $(".arrow-up");
   const $headerLink = $(".header__nav-link");
-  const $writeMeBtn = $(".main-screen__btn");
+  const $portfolioBtn = $(".main-screen__btn");
 
   $(window).on(
     "scroll",
@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
       }
     }),
     ScrollReveal().reveal(
-      ".my-skills__skill, .my-skills__foto,.gallery__item",
+      ".my-skills__skill, .my-skills__start, .my-skills__tool, .my-skills__foto,.gallery__item",
       {
         interval: 400,
         distance: "150px",
@@ -53,11 +53,8 @@ jQuery(document).ready(function($) {
   $arrowUp.on("click", function() {
     $("html, body").animate({ scrollTop: 0 }, 500);
   });
-  $writeMeBtn.on("click", function() {
-    $("html, body").animate(
-      { scrollTop: $(contacts).offset().top - -150 },
-      500
-    );
+  $portfolioBtn.on("click", function() {
+    $("html, body").animate({ scrollTop: $(gallery).offset().top - -50 }, 500);
   });
   $(".form__contents").each(function() {
     this.reset();
