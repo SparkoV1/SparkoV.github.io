@@ -441,9 +441,9 @@
     transform: perspective(1000px) rotateX(15deg) scale(1.07);
     text-shadow: 0 0 10px black, 0 2px 0 #bfe2ff;
   }
-  @media (max-width: 767px) {
-    .gallery__title3d3d-3 {
-      font-size: 30px;
+  @media screen and (max-width: 767px) {
+    .gallery__title3d-3 {
+      font-size: 40px;
       text-shadow: none;
     }
   }
