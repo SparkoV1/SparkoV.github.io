@@ -436,17 +436,16 @@
     letter-spacing: 3px;
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.9), 0 10px 0 #bfe2ff;
+    @media screen and (max-width: 767px) {
+      font-size: 50px;
+      text-shadow: none;
+    }
   }
   .gallery__title3d:hover .gallery__title3d-3 {
     transform: perspective(1000px) rotateX(15deg) scale(1.07);
     text-shadow: 0 0 10px black, 0 2px 0 #bfe2ff;
   }
-  @media screen and (max-width: 767px) {
-    .gallery__title3d-3 {
-      font-size: 50px;
-      text-shadow: none;
-    }
-  }
+
   // !-----------------------------------------------------
   &__items {
     display: grid;
