@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
     $("html, body").animate({ scrollTop: 0 }, 500);
   });
   $portfolioBtn.on("click", function() {
-    $("html, body").animate({ scrollTop: $(gallery).offset().top - -50 }, 500);
+    $("html, body").animate({ scrollTop: $(gallery).offset().top - 57 }, 500);
   });
   $(".form__contents").each(function() {
     this.reset();
