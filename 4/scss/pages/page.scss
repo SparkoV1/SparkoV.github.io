@@ -145,8 +145,7 @@ section {
 /* *---------Work-lock------------------ */
 
 .work-look {
-  padding-bottom: 107px;
-  .work-look__tabs {
+  &__tabs {
     display: flex;
     justify-content: space-between;
   }
@@ -195,15 +194,19 @@ section {
     margin-right: 10px;
   }
 
-  &__content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: center;
-    align-items: center;
+  &__content-item {
+    display: none;
 
-    grid-template-areas:
-      "img h2"
-      "img p";
+    &.active-tab {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: center;
+      align-items: center;
+
+      grid-template-areas:
+        "img h2"
+        "img p";
+    }
   }
 
   &__pic {
@@ -225,6 +228,17 @@ section {
     color: #606060;
     font-size: 17px;
     grid-area: p;
+  }
+}
+
+.work-look__tab {
+  &.active-tab {
+    &:first-letter {
+      background-color: var(--colorPrimary);
+    }
+    &:after {
+      width: 101%;
+    }
   }
 }
 

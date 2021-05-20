@@ -24,6 +24,21 @@ jQuery(document).ready(function($) {
     $html.removeClass("overflow-hidden");
   });
 
+  const $title = $(".work-look__tab");
+  const $content = $(".work-look__content-item");
+
+  $title.on("click", function() {
+    $(this)
+      .addClass("active-tab")
+      .siblings()
+      .removeClass("active-tab")
+      .closest(".container")
+      .find(".work-look__content-item")
+      .removeClass("active-tab")
+      .eq($(this).index())
+      .addClass("active-tab");
+  });
+
   $(window).on(
     "scroll",
     $.debounce(100, function() {
