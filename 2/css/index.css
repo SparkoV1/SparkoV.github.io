@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  padding: 54px 0 0px;
+  padding: 54px 0 0;
 }
 
 .header img {
@@ -160,7 +160,6 @@ body {
   counter-increment: list;
   content: "0" counter(list);
   padding-top: 20px;
-  margin-right: 5px;
   opacity: 0.48;
   font-size: 31px;
   font-weight: 400;
@@ -170,7 +169,7 @@ body {
 .list__item {
   font-size: 20px;
   font-weight: 700;
-  margin: 38px 15pxp;
+  margin: 38px 15px;
 }
 
 .list__item-text {
@@ -191,7 +190,7 @@ body {
   background-color: #efefef;
 }
 .footer__text {
-  padding: 0px 85px;
+  padding: 0 85px;
   opacity: 0.47;
   font-size: 13px;
   font-weight: 400;
@@ -229,17 +228,9 @@ body {
     order: 1;
     display: flex;
     flex-wrap: wrap;
-    /* !----------Це тіпа варіант 2-------- */
-    /*   display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-    /* !---------------------------------- */
   }
   .advantages__items-iphone {
     order: 2;
-    /* !----------Це тіпа варіант 2-------- */
-    /* position: relative;
-    top: 100%; */
-    /* !---------------------------------- */
   }
 
   .advantages__list {
@@ -247,7 +238,7 @@ body {
   }
 
   .footer__text {
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 
   .footer {
@@ -267,8 +258,8 @@ body {
   .main-screen__actions {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px 0px;
-    padding-left: 0px;
+    margin: -10px 0;
+    padding-left: 0;
   }
 
   .main-screen__button {
