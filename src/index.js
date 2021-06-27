@@ -7,7 +7,8 @@ jQuery(document).ready(function($) {
   const $links = $(".header__nav-links");
   const $arrowUp = $(".arrow-up");
   const $headerLink = $(".header__nav-link");
-  const $portfolioBtn = $(".main-screen__btn");
+  const $portfolioBtn = $(".main-screen__btn")
+
 
   $(window).on(
     "scroll",
@@ -60,3 +61,5 @@ jQuery(document).ready(function($) {
     this.reset();
   });
 });
+
+
